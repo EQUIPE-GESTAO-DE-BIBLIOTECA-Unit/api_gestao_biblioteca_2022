@@ -17,6 +17,8 @@ public class user {
         this.email = email;
     }
 
+    @Id
+    @GeneratedValue
     public Long getId() {
         return id;
     }

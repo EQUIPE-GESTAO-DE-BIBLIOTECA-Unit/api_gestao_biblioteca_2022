@@ -21,4 +21,20 @@ public class UserController {
     public List<user> findAll(){
         return userRepo.findAll();
     }
+
+    @PostMapping
+    public Usuario save(@RequestBody Usuario novoUsuario){
+        return userRepo.save(novoUsuario);
+    }
+
+    @PutMapping
+    public Usuario update(@RequestBody Usuario usuarioAtualizar){
+        return userRepo.save(usuarioAtualizar);
+    }
+
+    @DeleteMapping
+    public String delete(@RequestBody Usuario usuarioDeletar){
+        userRepo.delete(usuarioDeletar);
+        return "usuário deletado com sucesso!";
+    }
 }
