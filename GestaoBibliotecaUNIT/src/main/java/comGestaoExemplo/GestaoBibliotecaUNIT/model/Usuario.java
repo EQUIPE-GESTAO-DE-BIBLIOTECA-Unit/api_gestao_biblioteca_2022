@@ -7,7 +7,6 @@ import javax.persistence.Id;
 @Entity 
 public class Usuario {
     private Long id;
-    //@NotBlank
     private String name;
     private String email;
 
