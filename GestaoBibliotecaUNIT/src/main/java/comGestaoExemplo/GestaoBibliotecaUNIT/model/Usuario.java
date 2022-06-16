@@ -1,4 +1,4 @@
-package comGestaoExemplo.model;
+package comGestaoExemplo.GestaoBibliotecaUNIT.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +15,9 @@ public class Usuario {
         this.id = id;
         this.name = name;
         this.email = email;
+    }
+
+    public Usuario(){
     }
 
     @Id

@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import comGestaoExemplo.model.Usuario;
-import comGestaoExemplo.repository.UserRepo;
+import comGestaoExemplo.GestaoBibliotecaUNIT.model.Usuario;
+import comGestaoExemplo.GestaoBibliotecaUNIT.repository.UserRepo;
 
 @RestController
 @RequestMapping(value="/users")
