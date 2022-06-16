@@ -6,6 +6,8 @@ import javax.persistence.Id;
 
 @Entity
 public class Obra {
+    @Id
+    @GeneratedValue
     private long id;
     private String name;
     private String editora;
@@ -13,8 +15,7 @@ public class Obra {
     private String idioma;
     private String autor;
     
-    public Obra(long id, String name, String editora, int ano, String idioma, String autor) {
-        this.id = id;
+    public Obra(String name, String editora, int ano, String idioma, String autor) {
         this.name = name;
         this.editora = editora;
         this.ano = ano;
@@ -26,8 +27,6 @@ public class Obra {
         
     }
 
-    @Id
-    @GeneratedValue
     public long getId() {
         return id;
     }
